@@ -1,0 +1,109 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: #191919;
+}
+
+header {
+    color: #dcdcdc;
+}
+
+header img {
+    margin-block: 2vh;
+}
+
+header h1 {
+    font-size: 7vh;
+    color: purple;
+}
+
+header h3 {
+    font-size: 3vh;
+}
+
+.principal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer, main, header {
+    margin-block: 1%;
+    width: 100%;
+}
+
+main .links {
+    display: grid; 
+    justify-content: center; 
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, 200px);
+}
+
+main .links select {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 6px #000000;
+    color: #000000;
+    border-radius: 5px;
+    margin: 10%;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+main .links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10%;
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .links .wt {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 6px #1a9447;
+    background-color: #1a9447;
+}
+
+main .links .fc {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 6px #1458ab;
+    background-color: #1458ab;
+}
+
+main .links .in {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 6px rgb(168, 0, 168);
+    background-color: rgb(168, 0, 168);
+}
+
+header {
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    color: rgb(100, 100, 100);
+    padding-inline: 1%;
+}
+
+@media only screen and (max-width: 450px) {
+    footer p {
+        font-size: smaller;
+    }
+    
+    header h1 {
+        font-size: 6vh;
+        color: purple;
+    }
+
+    header h3 {
+        font-size: 2.5vh;
+    }
+}
