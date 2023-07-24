@@ -14,9 +14,14 @@
             <h3>Acesse meus catálogos a baixo!</h3>
         </header>
         <main>
+            <script>
+                function openLink(a) {
+                    window.open(a.options[a.selectedIndex].value);
+                    window.location.reload();
+                }
+            </script>
             <div class="links">
-                <select onchange="window.open(this.options[this.selectedIndex].value);
-                                  window.location.reload();  ">
+                <select onchange="openLink(this)">
                     <option disabled selected>Cosméticos</option>
                     <option value="https://catalogo.jequiti.com.br/2023/episodio-10_23/">Jequiti</option>
                     <option value="https://conecta.avon.com.br/revista/?campanha=18&ano=2023&representante=77030435">Avon</option>
@@ -24,19 +29,16 @@
                     <option value="https://natura.com.vc/13_brasil-0b3m8">Natura</option>
                     <option value="https://minhaloja.eudora.com.br/eudora-princess-premium">Eudora</option>
                 </select> 
-                <select onchange="window.open(this.options[this.selectedIndex].value);
-                window.location.reload()">
+                <select onchange="openLink(this)">
                     <option disabled selected>Utilidades</option>
                     <option value="https://catalogos.hiroshima.com.br/07-08-09/pravoce">Pra Você</option>
                     <option value="https://conecta.avon.com.br/revista/?campanha=18&ano=2023&representante=77030435">Avon Moda e Casa</option>
                 </select> 
-                <select onchange="window.open(this.options[this.selectedIndex].value);
-                window.location.reload()">
+                <select onchange="openLink(this)">
                     <option disabled selected>Roupas</option>
                     <option value="https://catalogos.hiroshima.com.br/07-08-09/hiroshima">Hiroshima</option>
                 </select> 
-                <select onchange="window.open(this.options[this.selectedIndex].value);
-                window.location.reload()">
+                <select onchange="openLink(this)">
                     <option disabled selected>Jóias</option>
                     <option value="https://catalogos.hiroshima.com.br/07-08-09/larc">L'Arc en Ciel</option>
                 </select> 
